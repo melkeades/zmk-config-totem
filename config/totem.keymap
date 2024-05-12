@@ -195,6 +195,36 @@
             key-positions = <1 12>;
             layers = <0>;
         };
+
+        ctrlDel {
+            bindings = <&ctrlDel>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+
+        ctrlBackspace {
+            bindings = <&ctrlBackspace>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        endDel {
+            bindings = <&endDel>;
+            key-positions = <10 11 12>;
+            layers = <0>;
+        };
+
+        homeBackspace {
+            bindings = <&homeBackspace>;
+            key-positions = <17 18 19>;
+            layers = <0>;
+        };
+
+        homeEndDel {
+            bindings = <&homeEndDel>;
+            key-positions = <11 12 17 18>;
+            layers = <0>;
+        };
     };
 
     macros {
