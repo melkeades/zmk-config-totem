@@ -197,7 +197,7 @@
         };
 
         ctrlDel {
-            bindings = <&ctrlDel>;
+            bindings = <&ctrlDel2>;
             key-positions = <11 12>;
             layers = <0>;
         };
@@ -264,13 +264,6 @@
             label = "CTRLDEL";
         };
 
-        ctrlDel: ctrlDel {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(DELETE)>;
-            label = "CTRLDEL";
-        };
-
         homeBackspace: homeBackspace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -319,6 +312,13 @@
                 <&kp DELETE>;
 
             label = "HOMEENDDEL";
+        };
+
+        ctrlDel2: ctrlDel2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(DELETE)>;
+            label = "CTRLDEL2";
         };
     };
 
