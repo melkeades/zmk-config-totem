@@ -103,14 +103,14 @@
             layers = <0>;
         };
 
-        QuoteDouble {
-            bindings = <&kp DOUBLE_QUOTES>;
+        Quote {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <11 13>;
             layers = <0>;
         };
 
-        Quote {
-            bindings = <&kp SINGLE_QUOTE>;
+        QuoteDouble {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <16 18>;
             layers = <0>;
         };
@@ -139,14 +139,14 @@
             layers = <0>;
         };
 
-        Tilde {
-            bindings = <&kp TILDE>;
+        Grave {
+            bindings = <&kp GRAVE>;
             key-positions = <11 12 13>;
             layers = <0>;
         };
 
-        Grave {
-            bindings = <&kp GRAVE>;
+        Tilde {
+            bindings = <&kp TILDE>;
             key-positions = <16 17 18>;
             layers = <0>;
         };
@@ -358,6 +358,18 @@
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 32 33 34>;
+        };
+
+        enter_shift: enter_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ENTER_SHIFT";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25>;
         };
     };
 
