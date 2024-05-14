@@ -408,10 +408,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q            &kp W            &kp F           &kp P              &kp B                            &kp J      &kp L               &kp U                 &kp Y             &kp SEMI
-       &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S    &hml LEFT_SHIFT T  &kp G                            &kp M      &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
-&kp Q  &kp Z            &kp X            &hml_layer 1 C  &hml_layer 3 D     &kp V                            &kp K      &kp H               &kp COMMA             &kp DOT           &kp FSLH          &kp BSLH
-                                         &kp TAB         &lt 1 ESCAPE       &enter_shift LEFT_SHIFT ENTER    &kp SPACE  &lt 4 BACKSPACE     &lt 3 DEL
+       &kp Q            &kp W            &kp F         &kp P              &kp B                            &kp J      &kp L               &kp U                 &kp Y             &kp SEMI
+       &hml LEFT_WIN A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G                            &kp M      &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
+&kp Q  &kp Z            &kp X            &kp C         &hml_layer 3 D     &kp V                            &kp K      &kp H               &kp COMMA             &kp DOT           &kp FSLH          &kp BSLH
+                                         &kp TAB       &lt 1 ESCAPE       &enter_shift LEFT_SHIFT ENTER    &kp SPACE  &lt 4 BACKSPACE     &lt 3 DEL
             >;
         };
 
