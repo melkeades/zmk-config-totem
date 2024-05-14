@@ -317,6 +317,20 @@
             bindings = <&kp LC(DELETE)>;
             label = "CTRLDEL2";
         };
+
+        play_pause: play_pause {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(KP_SUBTRACT))>;
+            label = "PLAY_PAUSE";
+        };
+
+        toggle_toggl: toggle_toggl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(KP_NUMBER_0)>;
+            label = "TOGGLE_TOGGL";
+        };
     };
 
     behaviors {
@@ -393,10 +407,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans        &trans        &trans            &trans          &trans    &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
-        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
-&trans  &trans        &trans        &trans            &trans          &trans    &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans
-                                    &trans            &trans          &trans    &kp NUMBER_0     &trans        &trans
+        &trans        &trans        &trans            &trans          &trans         &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
+        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans         &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
+&trans  &trans        &trans        &trans            &toggle_toggl   &play_pause    &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans
+                                    &trans            &trans          &trans         &kp NUMBER_0     &trans        &trans
             >;
         };
 
