@@ -437,10 +437,10 @@
 
         nav {
             bindings = <
-        &trans     &trans     &trans     &trans     &trans    &trans        &trans          &trans          &trans        &trans
-        &trans     &trans     &trans     &trans     &trans    &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
-                              &trans     &trans     &trans    &trans        &trans          &trans
+        &trans     &trans     &trans     &trans     &trans    &trans      &trans          &trans          &trans        &trans
+        &trans     &trans     &trans     &trans     &trans    &kp CAPS    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
+                              &trans     &trans     &trans    &trans      &trans          &trans
             >;
         };
 
