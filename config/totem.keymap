@@ -423,7 +423,7 @@
             bindings = <
        &hml LS(LC(LEFT_ALT)) Q  &hml LS(LEFT_ALT) W  &hml LC(LEFT_ALT) F  &hml LC(LEFT_SHIFT) P  &kp B                            &kp J             &hmr RC(RIGHT_SHIFT) L  &hmr RC(RIGHT_ALT) U  &hmr RS(RIGHT_ALT) Y  &hmr RS(RC(RIGHT_ALT)) SEMICOLON
        &hml LEFT_WIN A          &hml LEFT_ALT R      &hml LCTRL S         &hml LEFT_SHIFT T      &kp G                            &kp M             &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I      &hmr RIGHT_WIN O
-&kp Q  &kp Z                    &kp X                &kp C                &bal_nav 3 D           &kp V                            &kp K             &kp H                   &kp COMMA             &kp DOT               &kp FSLH                          &kp BSLH
+&kp Q  &kp Z                    &kp X                &kp C                &kp D                  &kp V                            &kp K             &kp H                   &kp COMMA             &kp DOT               &kp FSLH                          &kp BSLH
                                                      &kp TAB              &lt 1 ESCAPE           &enter_shift LEFT_SHIFT ENTER    &bal_nav 3 SPACE  &lt 4 BACKSPACE         &lt 3 DEL
             >;
         };
