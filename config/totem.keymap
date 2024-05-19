@@ -388,13 +388,13 @@
         bal_nav: bal_nav {
             compatible = "zmk,behavior-hold-tap";
             label = "BAL_NAV";
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 13 12 11 10 0 1 2 3 4 10 11 12 13 14 22 23 25 20 21 32 33 34 36 37>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 13 12 11 10 0 1 2 3 4 10 11 12 13 14 22 25 20 21>;
             hold-trigger-on-release;
         };
     };
@@ -421,10 +421,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &hml LS(LC(LEFT_ALT)) Q  &hml LS(LEFT_ALT) W  &hml LC(LEFT_ALT) F  &hml LC(LEFT_SHIFT) P      &kp B                            &kp J      &hmr RC(RIGHT_SHIFT) L  &hmr RC(RIGHT_ALT) U  &hmr RS(RIGHT_ALT) Y  &hmr RS(RC(RIGHT_ALT)) SEMICOLON
-       &hml LEFT_WIN A          &hml LEFT_ALT R      &hml LCTRL S         &hml LEFT_SHIFT T          &kp G                            &kp M      &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I      &hmr RIGHT_WIN O
-&kp Q  &kp Z                    &kp X                &kp C                &enter_shift LEFT_SHIFT D  &kp V                            &kp K      &kp H                   &kp COMMA             &kp DOT               &kp FSLH                          &kp BSLH
-                                                     &kp TAB              &lt 1 ESCAPE               &enter_shift LEFT_SHIFT ENTER    &kp SPACE  &lt 4 BACKSPACE         &lt 3 DEL
+       &hml LS(LC(LEFT_ALT)) Q  &hml LS(LEFT_ALT) W  &hml LC(LEFT_ALT) F  &hml LC(LEFT_SHIFT) P  &kp B                            &kp J      &hmr RC(RIGHT_SHIFT) L  &hmr RC(RIGHT_ALT) U  &hmr RS(RIGHT_ALT) Y  &hmr RS(RC(RIGHT_ALT)) SEMICOLON
+       &hml LEFT_WIN A          &hml LEFT_ALT R      &hml LCTRL S         &hml LEFT_SHIFT T      &kp G                            &kp M      &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I      &hmr RIGHT_WIN O
+&kp Q  &kp Z                    &kp X                &kp C                &bal_nav 3 D           &kp V                            &kp K      &kp H                   &kp COMMA             &kp DOT               &kp FSLH                          &kp BSLH
+                                                     &kp TAB              &lt 1 ESCAPE           &enter_shift LEFT_SHIFT ENTER    &kp SPACE  &lt 4 BACKSPACE         &lt 3 DEL
             >;
         };
 
