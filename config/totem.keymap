@@ -254,13 +254,13 @@
         toggleNav {
             bindings = <&tog 3>;
             key-positions = <0 1>;
-            layers = <0>;
+            layers = <0 3>;
         };
 
         toggleNum {
             bindings = <&tog 1>;
             key-positions = <8 9>;
-            layers = <0>;
+            layers = <0 1>;
         };
     };
 
@@ -493,7 +493,7 @@
         numbers {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "num";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -521,6 +521,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &kp SPACE  &trans  &trans
             >;
+
+            label = "symb";
         };
 
         nav {
@@ -530,6 +532,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
                         &trans  &trans  &trans    &trans      &trans          &trans
             >;
+
+            label = "nav";
         };
 
         F1_F12 {
@@ -539,6 +543,8 @@
 &trans  &trans        &trans        &trans     &trans          &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                                     &trans     &trans          &trans    &trans  &trans  &trans
             >;
+
+            label = "f1f12";
         };
 
         qwerty {
@@ -548,6 +554,8 @@
 &trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp SQT
                       &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "qwe";
         };
 
         shift {
@@ -557,6 +565,8 @@
 &trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(D)  &kp LS(V)    &kp LS(K)  &kp LS(H)  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
                               &trans     &trans     &trans       &trans     &trans     &trans
             >;
+
+            label = "shift";
         };
     };
 };
