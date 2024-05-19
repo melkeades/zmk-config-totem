@@ -532,7 +532,7 @@
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &kp PRINTSCREEN  &mkp MB2        &trans        &kp CAPSLOCK
         &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE       &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END       &trans
                         &trans  &trans  &trans    &trans           &trans           &trans
             >;
 
@@ -585,10 +585,10 @@
 
         left_misc {
             bindings = <
-        &trans  &trans                &trans            &trans             &trans       &trans  &trans  &trans  &trans  &trans
-        &trans  &trans                &trans            &trans             &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans            &trans             &kp SPACE    &trans  &trans  &trans
+        &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans  &trans  &trans
+        &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans            &trans             &kp SPACE    &trans  &trans  &trans
             >;
 
             label = "left_misc";
