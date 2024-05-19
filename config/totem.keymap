@@ -377,7 +377,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LEFT_CONTROL &kp RIGHT_CONTROL &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_WIN &kp RIGHT_WIN>;
+                <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LEFT_CONTROL &kp RIGHT_CONTROL &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_WIN &kp RIGHT_WIN>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>;
 
             label = "RELEASE_MOD";
         };
@@ -516,10 +519,10 @@
 
         symbols {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &kp SPACE  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans     &kp MINUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
+        &trans  &trans  &trans  &trans  &trans    &trans     &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL          &trans
+                        &trans  &trans  &trans    &kp SPACE  &trans          &trans
             >;
 
             label = "symb";
@@ -527,10 +530,10 @@
 
         nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans      &kp PRINTSCREEN  &mkp MB2        &trans        &kp CAPSLOCK
-        &trans  &trans  &trans  &trans  &trans    &caps_word  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END       &trans
-                        &trans  &trans  &trans    &trans      &trans           &trans
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &kp PRINTSCREEN  &mkp MB2        &trans        &kp CAPSLOCK
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE       &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END       &trans
+                        &trans  &trans  &trans    &trans           &trans           &trans
             >;
 
             label = "nav";
