@@ -527,10 +527,10 @@
 
         nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans      &kp CAPS        &mkp MB2        &trans        &trans
-        &trans  &trans  &trans  &trans  &trans    &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
-                        &trans  &trans  &trans    &trans      &trans          &trans
+        &trans  &trans  &trans  &trans  &trans    &trans      &kp PRINTSCREEN  &mkp MB2        &trans        &kp CAPSLOCK
+        &trans  &trans  &trans  &trans  &trans    &caps_word  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END       &trans
+                        &trans  &trans  &trans    &trans      &trans           &trans
             >;
 
             label = "nav";
