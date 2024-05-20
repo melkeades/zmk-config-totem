@@ -529,9 +529,9 @@
 
         nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &kp PRINTSCREEN  &mkp MB2        &trans        &kp CAPSLOCK
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &kp PRINTSCREEN  &mkp MB2        &trans        &kp CAPS
         &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
                         &trans  &trans  &trans    &trans           &trans           &trans
             >;
 
@@ -595,10 +595,10 @@
 
         media_nav {
             bindings = <
-        &trans  &kp LS(LC(SLASH))  &play_pause  &kp LS(LC(ASTERISK))  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans             &trans       &trans                &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans             &trans       &trans                &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans       &trans                &trans    &trans  &trans  &trans
+        &trans  &kp LS(LC(FSLH))  &play_pause  &kp LS(LC(ASTRK))  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans            &trans       &trans             &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &trans       &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans       &trans             &trans    &trans  &trans  &trans
             >;
 
             label = "mediaNav";
