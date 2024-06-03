@@ -152,14 +152,14 @@
             layers = <0>;
         };
 
-        Caret {
-            bindings = <&kp CARET>;
+        AtSign {
+            bindings = <&kp AT>;
             key-positions = <12 3>;
             layers = <0>;
         };
 
-        AtSign {
-            bindings = <&kp AT>;
+        Caret {
+            bindings = <&kp CARET>;
             key-positions = <6 17>;
             layers = <0>;
         };
@@ -529,10 +529,10 @@
 
         nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &kp PRINTSCREEN  &mkp MB2        &trans        &kp CAPS
-        &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
-                        &trans  &trans  &trans    &trans           &trans           &trans
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &play_pause     &mkp MB2        &kp PRINTSCREEN  &kp CLCK
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP      &kp END    &trans
+                        &trans  &trans  &trans    &trans           &trans          &trans
             >;
 
             label = "nav";
