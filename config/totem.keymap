@@ -487,8 +487,8 @@
             bindings = <
        &bal_nav 7 Q     &hml LS(LEFT_ALT) W  &hml LC(LS(LEFT_ALT)) F  &hml LC(LEFT_SHIFT) P  &kp B                &kp J             &hmr RC(RIGHT_SHIFT) L  &hmr RC(RIGHT_ALT) U  &hmr RS(RIGHT_ALT) Y  &hmr RS(RC(RIGHT_ALT)) SEMICOLON
        &hml LEFT_WIN A  &hml LEFT_ALT R      &hml LCTRL S             &hml LEFT_SHIFT T      &kp G                &kp M             &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I      &hmr RIGHT_WIN O
-&kp Q  &bal_nav 8 Z     &bal_nav 4 X         &bal_nav 3 C             &bal_nav 1 D           &kp V                &kp K             &kp H                   &kp COMMA             &kp DOT               &kp FSLH                          &kp BSLH
-                                             &hold_nav 9 TAB          &hold_nav 1 ESCAPE     &hold_nav 6 ENTER    &bal_nav 3 SPACE  &lt 4 BACKSPACE         &lt 3 DEL
+&kp Q  &bal_nav 8 Z     &bal_nav 4 X         &bal_nav 3 C             &bal_nav 1 D           &kp V                &kp K             &kp H                   &hold_nav 10 COMMA    &kp DOT               &kp FSLH                          &kp BSLH
+                                             &hold_nav 10 TAB         &hold_nav 1 ESCAPE     &hold_nav 6 ENTER    &bal_nav 3 SPACE  &lt 4 BACKSPACE         &lt 3 DEL
             >;
         };
 
@@ -584,10 +584,10 @@
 
         left_misc {
             bindings = <
-        &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans  &trans  &trans
-        &trans  &trans         &trans            &trans             &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans            &trans             &kp SPACE    &trans  &trans  &trans
+        &trans  &trans            &trans             &trans         &trans         &trans  &trans  &trans  &trans  &trans
+        &trans  &trans            &trans             &trans         &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &play_pause    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans             &trans         &kp SPACE      &trans  &trans  &trans
             >;
 
             label = "left_misc";
@@ -602,6 +602,17 @@
             >;
 
             label = "mediaNav";
+        };
+
+        left_num {
+            bindings = <
+        &kp SLASH        &kp N7        &kp N8        &kp N9        &kp MINUS     &trans     &trans  &trans  &trans  &trans
+        &kp ASTERISK     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &trans     &trans  &trans  &trans  &trans
+&trans  &kp KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans     &trans  &trans  &trans  &trans  &trans
+                                       &trans        &trans        &kp ENTER     &kp SPACE  &trans  &trans
+            >;
+
+            label = "leftNun";
         };
     };
 };
