@@ -142,7 +142,7 @@
 
         Grave {
             bindings = <&kp GRAVE>;
-            key-positions = <13 10>;
+            key-positions = <13 11 12>;
             layers = <0>;
         };
 
@@ -198,12 +198,14 @@
             bindings = <&ctrlDel2>;
             key-positions = <11 12>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         ctrlBackspace {
             bindings = <&ctrlBackspace>;
             key-positions = <17 18>;
             layers = <0>;
+            require-prior-idle-ms = <200>;
         };
 
         endDel {
@@ -285,33 +287,33 @@
 
         n4 {
             bindings = <&kp NUMBER_4>;
-            key-positions = <12 34>;
+            key-positions = <34 2>;
         };
 
         n5 {
             bindings = <&kp N5>;
-            key-positions = <35 17>;
+            key-positions = <35 7>;
         };
 
         n6 {
             bindings = <&kp NUMBER_6>;
-            key-positions = <2 34>;
+            key-positions = <34 1>;
         };
 
         n7 {
             bindings = <&kp N7>;
-            key-positions = <7 35>;
+            key-positions = <35 8>;
         };
 
         n8 {
             bindings = <&kp N8>;
-            key-positions = <11 34>;
+            key-positions = <34 0>;
             layers = <0>;
         };
 
         n9 {
             bindings = <&kp N9>;
-            key-positions = <35 18>;
+            key-positions = <35 9>;
             layers = <0>;
         };
     };
