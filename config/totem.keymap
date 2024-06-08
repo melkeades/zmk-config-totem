@@ -262,6 +262,56 @@
             key-positions = <8 9>;
             layers = <0 1>;
         };
+
+        n0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <13 34>;
+        };
+
+        n1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <16 35>;
+        };
+
+        n2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <3 34>;
+        };
+
+        n3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <6 35>;
+        };
+
+        n4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <12 34>;
+        };
+
+        n5 {
+            bindings = <&kp N5>;
+            key-positions = <35 17>;
+        };
+
+        n6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <2 34>;
+        };
+
+        n7 {
+            bindings = <&kp N7>;
+            key-positions = <7 35>;
+        };
+
+        n8 {
+            bindings = <&kp N8>;
+            key-positions = <11 34>;
+        };
+
+        n9 {
+            bindings = <&kp N9>;
+            key-positions = <35 18>;
+        };
     };
 
     macros {
