@@ -308,13 +308,11 @@
         n8 {
             bindings = <&kp N8>;
             key-positions = <34 0>;
-            layers = <0>;
         };
 
         n9 {
             bindings = <&kp N9>;
             key-positions = <35 9>;
-            layers = <0>;
         };
     };
 
