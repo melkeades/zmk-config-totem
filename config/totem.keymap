@@ -291,7 +291,7 @@
         };
 
         n5 {
-            bindings = <&kp N5>;
+            bindings = <&kp NUMBER_5>;
             key-positions = <35 7>;
         };
 
@@ -301,17 +301,17 @@
         };
 
         n7 {
-            bindings = <&kp N7>;
+            bindings = <&kp NUMBER_7>;
             key-positions = <35 8>;
         };
 
         n8 {
-            bindings = <&kp N8>;
+            bindings = <&kp NUMBER_8>;
             key-positions = <34 0>;
         };
 
         n9 {
-            bindings = <&kp N9>;
+            bindings = <&kp KP_NUMBER_9>;
             key-positions = <35 9>;
         };
     };
