@@ -462,6 +462,7 @@
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 32 33 34>;
+            hold-while-undecided;
         };
 
         enter_shift: enter_shift {
