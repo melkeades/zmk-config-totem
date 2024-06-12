@@ -462,7 +462,6 @@
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 32 33 34>;
-            hold-while-undecided;
         };
 
         enter_shift: enter_shift {
@@ -514,6 +513,20 @@
             hold-trigger-key-positions = <5 6 8 9 15 16 17 18 19 26 27 28 29 30 31 7 2 20 21 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25>;
             hold-trigger-on-release;
         };
+
+        hml_hold: hml_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 32 33 34>;
+            hold-while-undecided;
+        };
     };
 
     keymap {
@@ -538,10 +551,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bal_nav 7 Q           &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F  &hml LC(LEFT_SHIFT) P  &hml LS(LA(LCTRL)) B    &hmr RS(RA(RCTRL)) J  &hmr RC(RIGHT_SHIFT) L  &hmr RS(RIGHT_ALT) U  &hmr RA(RCTRL) Y  &kp Z
-       &hml LEFT_WIN A        &hml LEFT_ALT R   &hml LCTRL S         &hml LEFT_SHIFT T      &kp G                   &kp M                 &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
-&kp Q  &hold_nav 1 SEMICOLON  &bal_nav 4 X      &bal_nav 3 C         &bal_nav 1 D           &kp V                   &kp K                 &kp H                   &hold_nav 10 COMMA    &kp DOT           &kp FSLH          &kp BSLH
-                                                &hold_nav 10 TAB     &hold_nav 1 ESCAPE     &hold_nav 6 ENTER       &bal_nav 3 SPACE      &lt 4 BACKSPACE         &lt 3 DEL
+       &bal_nav 7 Q           &hml LA(LCTRL) W      &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr RS(RA(RCTRL)) J  &hmr RC(RIGHT_SHIFT) L  &hmr RS(RIGHT_ALT) U  &hmr RA(RCTRL) Y  &kp Z
+       &hml LEFT_WIN A        &hml_hold LEFT_ALT A  &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                 &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
+&kp Q  &hold_nav 1 SEMICOLON  &bal_nav 4 X          &bal_nav 3 C              &bal_nav 1 D            &kp V                   &kp K                 &kp H                   &hold_nav 10 COMMA    &kp DOT           &kp FSLH          &kp BSLH
+                                                    &hold_nav 10 TAB          &hold_nav 1 ESCAPE      &hold_nav 6 ENTER       &bal_nav 3 SPACE      &lt 4 BACKSPACE         &lt 3 DEL
             >;
         };
 
