@@ -538,10 +538,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bal_nav 7 Q     &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F  &hml LC(LEFT_SHIFT) P  &hml LS(LA(LCTRL)) B    &hmr RS(RA(RCTRL)) J  &hmr RC(RIGHT_SHIFT) L  &hmr RS(RIGHT_ALT) U  &hmr RA(RCTRL) Y  &kp SEMICOLON
-       &hml LEFT_WIN A  &hml LEFT_ALT R   &hml LCTRL S         &hml LEFT_SHIFT T      &kp G                   &kp M                 &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
-&kp Q  &bal_nav 8 Z     &bal_nav 4 X      &bal_nav 3 C         &bal_nav 1 D           &kp V                   &kp K                 &kp H                   &hold_nav 10 COMMA    &kp DOT           &kp FSLH          &kp BSLH
-                                          &hold_nav 10 TAB     &hold_nav 1 ESCAPE     &hold_nav 6 ENTER       &bal_nav 3 SPACE      &lt 4 BACKSPACE         &lt 3 DEL
+       &bal_nav 7 Q           &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F  &hml LC(LEFT_SHIFT) P  &hml LS(LA(LCTRL)) B    &hmr RS(RA(RCTRL)) J  &hmr RC(RIGHT_SHIFT) L  &hmr RS(RIGHT_ALT) U  &hmr RA(RCTRL) Y  &kp Z
+       &hml LEFT_WIN A        &hml LEFT_ALT R   &hml LCTRL S         &hml LEFT_SHIFT T      &kp G                   &kp M                 &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
+&kp Q  &hold_nav 1 SEMICOLON  &bal_nav 4 X      &bal_nav 3 C         &bal_nav 1 D           &kp V                   &kp K                 &kp H                   &hold_nav 10 COMMA    &kp DOT           &kp FSLH          &kp BSLH
+                                                &hold_nav 10 TAB     &hold_nav 1 ESCAPE     &hold_nav 6 ENTER       &bal_nav 3 SPACE      &lt 4 BACKSPACE         &lt 3 DEL
             >;
         };
 
