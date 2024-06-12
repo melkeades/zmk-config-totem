@@ -240,12 +240,12 @@
 
         bootloaderL {
             bindings = <&bootloader>;
-            key-positions = <33 34 2>;
+            key-positions = <33 34 20>;
         };
 
         bootloaderR {
             bindings = <&bootloader>;
-            key-positions = <35 36 7>;
+            key-positions = <35 36 31>;
         };
 
         releaseMods {
@@ -263,56 +263,6 @@
             bindings = <&tog 1>;
             key-positions = <8 9>;
             layers = <0 1>;
-        };
-
-        n0 {
-            bindings = <&kp NUMBER_0>;
-            key-positions = <13 34>;
-        };
-
-        n1 {
-            bindings = <&kp NUMBER_1>;
-            key-positions = <16 35>;
-        };
-
-        n2 {
-            bindings = <&kp NUMBER_2>;
-            key-positions = <3 34>;
-        };
-
-        n3 {
-            bindings = <&kp NUMBER_3>;
-            key-positions = <6 35>;
-        };
-
-        n4 {
-            bindings = <&kp NUMBER_4>;
-            key-positions = <34 2>;
-        };
-
-        n5 {
-            bindings = <&kp NUMBER_5>;
-            key-positions = <35 7>;
-        };
-
-        n6 {
-            bindings = <&kp NUMBER_6>;
-            key-positions = <34 1>;
-        };
-
-        n7 {
-            bindings = <&kp NUMBER_7>;
-            key-positions = <35 8>;
-        };
-
-        n8 {
-            bindings = <&kp NUMBER_8>;
-            key-positions = <34 0>;
-        };
-
-        n9 {
-            bindings = <&kp KP_NUMBER_9>;
-            key-positions = <35 9>;
         };
     };
 
@@ -551,10 +501,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bal_nav 7 Q           &hml LA(LCTRL) W     &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr RS(RA(RCTRL)) J  &hmr RC(RIGHT_SHIFT) L  &hmr RS(RIGHT_ALT) U  &hmr RA(RCTRL) Y  &kp Z
-       &hml LEFT_WIN A        &hml LS(LEFT_ALT) R  &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                 &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
-&kp Q  &hold_nav 1 SEMICOLON  &bal_nav 4 X         &bal_nav 3 C              &bal_nav 1 D            &kp V                   &kp K                 &kp H                   &hold_nav 10 COMMA    &kp DOT           &kp FSLH          &kp BSLH
-                                                   &hold_nav 10 TAB          &hold_nav 1 ESCAPE      &hold_nav 6 ENTER       &bal_nav 3 SPACE      &lt 4 BACKSPACE         &lt 3 DEL
+       &bal_nav 7 Q           &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr RS(RA(RCTRL)) J  &hmr RC(RIGHT_SHIFT) L  &hmr RS(RIGHT_ALT) U  &hmr RA(RCTRL) Y  &kp Z
+       &hml LEFT_WIN A        &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                 &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
+&kp Q  &hold_nav 1 SEMICOLON  &bal_nav 4 X      &bal_nav 3 C              &bal_nav 1 D            &kp V                   &kp K                 &kp H                   &hold_nav 10 COMMA    &kp DOT           &kp FSLH          &kp BSLH
+                                                &hold_nav 10 TAB          &hold_nav 1 ESCAPE      &hold_nav 6 ENTER       &bal_nav 3 SPACE      &lt 4 BACKSPACE         &lt 3 DEL
             >;
         };
 
