@@ -62,8 +62,8 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <12 13>;
             layers = <0>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <75>;
+            require-prior-idle-ms = <75>;
         };
 
         RightParenthesis {
