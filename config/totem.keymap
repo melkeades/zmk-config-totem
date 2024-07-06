@@ -164,7 +164,7 @@
             bindings = <&kp PERCENT>;
             key-positions = <22 24>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <125>;
             require-prior-idle-ms = <75>;
         };
 
