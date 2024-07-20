@@ -580,7 +580,7 @@
        &bal_nav 8 Q           &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr RS(RA(RCTRL)) J  &hmr RC(RIGHT_SHIFT) L  &hmr RS(RIGHT_ALT) U  &hmr RA(RCTRL) Y  &kp Z
        &hml LEFT_WIN A        &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                 &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_WIN O
 &kp Q  &hold_nav 2 SEMICOLON  &bal_nav 5 X      &bal_nav 4 C              &bal_nav 1 D            &kp V                   &kp K                 &kp H                   &hold_nav 11 COMMA    &kp DOT           &kp FSLH          &kp BSLH
-                                                &hold_nav 11 TAB          &hold_nav 1 ESCAPE      &hold_nav 7 ENTER       &bal_nav 4 SPACE      &lt 5 BACKSPACE         &lt 4 DEL
+                                                &hold_nav 10 TAB          &hold_nav 1 ESCAPE      &hold_nav 7 ENTER       &bal_nav 4 SPACE      &lt 5 BACKSPACE         &lt 4 DEL
             >;
         };
 
@@ -611,10 +611,10 @@
         numbers-pinky {
             label = "num-pin";
             bindings = <
-        &trans        &trans            &trans             &trans          &trans       &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
-        &kp LEFT_WIN  &kp LEFT_ALT      &kp LEFT_CONTROL   &kp LEFT_SHIFT  &trans       &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
-&trans  &kp LC(Z)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH   &trans       &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
-                                        &kp LEFT           &kp RIGHT       &kp SPACE    &kp NUMBER_0     &trans        &trans
+        &trans        &trans            &trans             &trans          &trans              &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
+        &kp LEFT_WIN  &kp LEFT_ALT      &kp LEFT_CONTROL   &kp LEFT_SHIFT  &trans              &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
+&trans  &kp LC(Z)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH   &trans              &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
+                                        &kp LEFT           &kp RIGHT       &bal_nav 4 SPACE    &kp NUMBER_0     &trans        &trans
             >;
         };
 
@@ -675,10 +675,10 @@
 
         left_nav {
             bindings = <
-        &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT      &kp PAGE_UP      &trans  &trans  &trans  &trans  &trans
-        &trans  &kp HOME  &kp DOWN       &kp END        &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans         &trans         &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp LS(ENTER)  &kp BACKSPACE  &kp DELETE       &trans  &trans  &trans
+        &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP      &trans  &trans  &trans  &trans  &trans
+        &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans         &trans      &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp BACKSPACE  &kp DELETE  &kp SPACE        &trans  &trans  &trans
             >;
 
             label = "left_nav";
@@ -695,15 +695,15 @@
             label = "left_misc";
         };
 
-        media_nav {
+        ctrl_nav {
             bindings = <
-        &trans  &kp LS(LC(FSLH))  &play_pause  &kp LS(LC(ASTRK))  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans            &trans       &trans             &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans            &trans       &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans       &trans             &trans    &trans  &trans  &trans
+               &trans     &kp LS(LC(FSLH))  &play_pause  &kp LS(LC(ASTRK))  &trans       &trans  &trans  &trans  &trans  &trans
+               &kp LC(A)  &kp LC(S)         &kp LC(D)    &kp LC(F)          &trans       &trans  &trans  &trans  &trans  &trans
+&kp LS(LC(Z))  &kp LC(Z)  &kp LC(X)         &kp LC(C)    &kp LC(V)          &kp LC(Y)    &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans       &trans             &trans       &trans  &trans  &trans
             >;
 
-            label = "mediaNav";
+            label = "ctrlNav";
         };
 
         left_num {
