@@ -457,7 +457,9 @@
                 <&macro_release>,
                 <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LEFT_CONTROL &kp RIGHT_CONTROL &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_WIN &kp RIGHT_WIN>,
                 <&macro_tap>,
-                <&to 0>;
+                <&to 0>,
+                <&macro_tap>,
+                <&sys_reset>;
 
             label = "RELEASE_MOD";
         };
