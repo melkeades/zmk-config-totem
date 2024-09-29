@@ -677,10 +677,10 @@
 
         left_nav {
             bindings = <
-        &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP               &trans  &trans  &trans  &trans  &trans
-        &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN             &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans         &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp BACKSPACE  &kp DELETE  &hold_nav 12 LC(SPACE)    &trans  &trans  &trans
+        &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP           &trans  &trans  &trans  &trans  &trans
+        &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans         &trans      &trans                &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp BACKSPACE  &kp DELETE  &hold_nav 12 SPACE    &trans  &trans  &trans
             >;
 
             label = "left_nav";
