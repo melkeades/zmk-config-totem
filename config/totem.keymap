@@ -587,8 +587,8 @@
             bindings = <
        &bal_nav 6 Q            &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
        &hml LEFT_WIN A         &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
-&kp Q  &hold_nav 15 SEMICOLON  &bal_nav 3 X      &bal_nav 2 C              &bal_nav 14 D           &kp V                   &kp K                        &kp H                   &hold_nav 9 COMMA     &kp DOT                  &kp FSLH          &kp BSLH
-                                                 &hold_nav 8 TAB           &hold_nav 14 ESCAPE     &hold_nav 5 SPACE       &bal_nav 2 ENTER             &lt 3 BACKSPACE         &lt 14 DEL
+&kp Q  &hold_nav 14 SEMICOLON  &bal_nav 3 X      &bal_nav 2 C              &bal_nav 14 D           &kp V                   &kp K                        &kp H                   &hold_nav 9 COMMA     &kp DOT                  &kp FSLH          &kp BSLH
+                                                 &hold_nav 8 TAB           &hold_nav 14 ESCAPE     &bal_nav 5 SPACE        &hold_nav 2 ENTER            &lt 3 BACKSPACE         &lt 14 DEL
             >;
         };
 
@@ -703,10 +703,10 @@
 
         game {
             bindings = <
-           &kp TAB         &kp Q  &kp W         &kp E   &kp R        &kp Y             &kp U          &kp I       &kp O       &kp P
-           &kp LEFT_SHIFT  &kp A  &kp S         &kp D   &kp F        &kp H             &kp J          &kp K       &kp L       &kp BACKSLASH
-&kp TILDE  &kp LCTRL       &kp Z  &kp X         &kp C   &kp V        &kp N             &kp M          &kp COMMA   &kp PERIOD  &kp SLASH      &kp ESCAPE
-                                  &kp LEFT_ALT  &mo 12  &kp SPACE    &bal_nav 2 ENTER  &kp BACKSPACE  &kp DELETE
+           &kp TAB         &kp Q  &kp W         &kp E   &kp R        &kp Y        &kp U          &kp I       &kp O       &kp P
+           &kp LEFT_SHIFT  &kp A  &kp S         &kp D   &kp F        &kp H        &kp J          &kp K       &kp L       &kp BACKSLASH
+&kp TILDE  &kp LCTRL       &kp Z  &kp X         &kp C   &kp V        &kp N        &kp M          &kp COMMA   &kp PERIOD  &kp SLASH      &kp ESCAPE
+                                  &kp LEFT_ALT  &mo 12  &kp SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp DELETE
             >;
 
             label = "game";
