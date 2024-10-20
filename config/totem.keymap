@@ -44,7 +44,7 @@
         eng {
             bindings = <&eng>;
             key-positions = <20 31>;
-            layers = <6>;
+            layers = <4>;
             timeout-ms = <75>;
             require-prior-idle-ms = <200>;
         };
@@ -327,23 +327,23 @@
         };
 
         toggleNav {
-            bindings = <&tog 4>;
+            bindings = <&tog 2>;
             key-positions = <0 1>;
-            layers = <0 4>;
+            layers = <0 2>;
             timeout-ms = <75>;
             require-prior-idle-ms = <200>;
         };
 
         toggleNum {
-            bindings = <&tog 1>;
+            bindings = <&tog 14>;
             key-positions = <8 9>;
-            layers = <0 1>;
+            layers = <0 14>;
             timeout-ms = <75>;
             require-prior-idle-ms = <200>;
         };
 
         game {
-            bindings = <&tog 13>;
+            bindings = <&tog 11>;
             key-positions = <0 9>;
         };
     };
@@ -367,14 +367,14 @@
         rus: rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &tog 6>;
+            bindings = <&kp LG(SPACE) &tog 4>;
             label = "RUS";
         };
 
         eng: eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &tog 6>;
+            bindings = <&kp LG(SPACE) &tog 4>;
             label = "ENG";
         };
 
@@ -585,53 +585,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bal_nav 8 Q           &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
-       &hml LEFT_WIN A        &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
-&kp Q  &hold_nav 2 SEMICOLON  &bal_nav 5 X      &bal_nav 4 C              &bal_nav 1 D            &kp V                   &kp K                        &kp H                   &hold_nav 11 COMMA    &kp DOT                  &kp FSLH          &kp BSLH
-                                                &hold_nav 10 TAB          &hold_nav 1 ESCAPE      &hold_nav 7 SPACE       &bal_nav 4 ENTER             &lt 5 BACKSPACE         &lt 1 DEL
-            >;
-        };
-
-        numbers {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "num";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃           ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃   SHIFT   ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃           ┃   P UP    ┃  C LOCK   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     *     ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    DEL    ┃     0     ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-               &trans        &trans        &trans            &trans          &trans           &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
-               &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &toggle_toggl    &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
-&kp LS(LC(Z))  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &kp LC(Y)        &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
-                                           &trans            &trans          &trans           &kp NUMBER_0     &trans        &trans
-            >;
-        };
-
-        numbers-pinky {
-            label = "num-pin";
-            bindings = <
-        &trans        &trans            &trans             &trans          &trans              &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
-        &kp LEFT_WIN  &kp LEFT_ALT      &kp LEFT_CONTROL   &kp LEFT_SHIFT  &trans              &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
-&trans  &kp LC(Z)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH   &trans              &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
-                                        &kp LEFT           &kp RIGHT       &bal_nav 4 SPACE    &kp NUMBER_0     &trans        &trans
+       &bal_nav 6 Q            &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
+       &hml LEFT_WIN A         &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
+&kp Q  &hold_nav 15 SEMICOLON  &bal_nav 3 X      &bal_nav 2 C              &bal_nav 14 D           &kp V                   &kp K                        &kp H                   &hold_nav 9 COMMA     &kp DOT                  &kp FSLH          &kp BSLH
+                                                 &hold_nav 8 TAB           &hold_nav 14 ESCAPE     &hold_nav 5 SPACE       &bal_nav 2 ENTER             &lt 3 BACKSPACE         &lt 14 DEL
             >;
         };
 
         symbols {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans     &kp MINUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
-        &trans  &trans  &trans  &trans  &trans    &trans     &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL          &trans
-                        &trans  &trans  &trans    &kp SPACE  &trans          &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp MINUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL          &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
             >;
 
             label = "symb";
@@ -650,10 +616,10 @@
 
         F1_F12 {
             bindings = <
-        &trans        &trans        &trans     &trans          &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
-        &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans        &trans        &trans     &trans          &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                                    &trans     &trans          &trans    &trans  &trans  &trans
+        &trans        &trans        &trans     &trans          &trans    &trans         &kp F7  &kp F8  &kp F9  &kp F10
+        &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp RIGHT_GUI  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans        &trans        &trans     &trans          &trans    &kp INSERT     &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                                    &trans     &trans          &trans    &trans         &trans  &trans
             >;
 
             label = "f1f12";
@@ -686,7 +652,7 @@
         &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP           &trans  &trans  &trans  &trans  &trans
         &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN         &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans    &trans         &trans      &trans                &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp BACKSPACE  &kp DELETE  &hold_nav 12 ENTER    &trans  &trans  &trans
+                          &kp BACKSPACE  &kp DELETE  &hold_nav 10 ENTER    &trans  &trans  &trans
             >;
 
             label = "left_nav";
@@ -716,10 +682,10 @@
 
         left_num {
             bindings = <
-        &kp SLASH        &kp N7        &kp N8        &kp N9        &kp MINUS            &trans     &trans      &trans   &trans  &trans
-        &kp ASTERISK     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS             &trans     &trans      &trans   &trans  &trans
-&trans  &kp KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD           &trans     &trans      &trans   &trans  &trans  &trans
-                                       &trans        &trans        &hold_nav 7 SPACE    &kp ENTER  &kp ESCAPE  &kp TAB
+        &kp SLASH        &kp N7        &kp N8        &kp N9        &kp MINUS            &trans  &trans  &trans  &trans  &trans
+        &kp ASTERISK     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS             &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD           &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans        &trans        &hold_nav 5 SPACE    &trans  &trans  &trans
             >;
 
             label = "leftNun";
@@ -737,10 +703,10 @@
 
         game {
             bindings = <
-           &kp TAB         &kp Q  &kp W         &kp E   &kp R        &kp Y      &kp U          &kp I       &kp O       &kp P
-           &kp LEFT_SHIFT  &kp A  &kp S         &kp D   &kp F        &kp H      &kp J          &kp K       &kp L       &kp BACKSLASH
-&kp TILDE  &kp LCTRL       &kp Z  &kp X         &kp C   &kp V        &kp N      &kp M          &kp COMMA   &kp PERIOD  &kp SLASH      &kp ESCAPE
-                                  &kp LEFT_ALT  &mo 14  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DELETE
+           &kp TAB         &kp Q  &kp W         &kp E   &kp R        &kp Y   &kp U          &kp I       &kp O       &kp P
+           &kp LEFT_SHIFT  &kp A  &kp S         &kp D   &kp F        &kp H   &kp J          &kp K       &kp L       &kp BACKSLASH
+&kp TILDE  &kp LCTRL       &kp Z  &kp X         &kp C   &kp V        &kp N   &kp M          &kp COMMA   &kp PERIOD  &kp SLASH      &kp ESCAPE
+                                  &kp LEFT_ALT  &mo 12  &kp SPACE    &trans  &kp BACKSPACE  &kp DELETE
             >;
 
             label = "game";
@@ -755,6 +721,40 @@
             >;
 
             label = "game_mod1";
+        };
+
+        numbers {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "num";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃           ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃   SHIFT   ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃           ┃   P UP    ┃  C LOCK   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     *     ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    DEL    ┃     0     ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+               &trans        &trans        &trans            &trans          &trans           &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
+               &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &toggle_toggl    &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
+&kp LS(LC(Z))  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &kp LC(Y)        &kp INSERT       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
+                                           &trans            &trans          &trans           &kp NUMBER_0     &trans        &trans
+            >;
+        };
+
+        numbers-pinky {
+            label = "num-pin";
+            bindings = <
+        &trans        &trans            &trans             &trans          &trans              &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
+        &kp LEFT_WIN  &kp LEFT_ALT      &kp LEFT_CONTROL   &kp LEFT_SHIFT  &trans              &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
+&trans  &kp LC(Z)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH   &trans              &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
+                                        &kp LEFT           &kp RIGHT       &bal_nav 2 SPACE    &kp NUMBER_0     &trans        &trans
+            >;
         };
     };
 };
