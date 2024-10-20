@@ -12,6 +12,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
@@ -340,6 +341,11 @@
             timeout-ms = <75>;
             require-prior-idle-ms = <200>;
         };
+
+        game {
+            bindings = <&tog 13>;
+            key-positions = <0 9>;
+        };
     };
 
     macros {
@@ -582,7 +588,7 @@
        &bal_nav 8 Q           &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
        &hml LEFT_WIN A        &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
 &kp Q  &hold_nav 2 SEMICOLON  &bal_nav 5 X      &bal_nav 4 C              &bal_nav 1 D            &kp V                   &kp K                        &kp H                   &hold_nav 11 COMMA    &kp DOT                  &kp FSLH          &kp BSLH
-                                                &hold_nav 10 TAB          &hold_nav 1 ESCAPE      &hold_nav 7 ENTER       &bal_nav 4 SPACE             &lt 5 BACKSPACE         &lt 1 DEL
+                                                &hold_nav 10 TAB          &hold_nav 1 ESCAPE      &hold_nav 7 SPACE       &bal_nav 4 SPACE             &lt 5 BACKSPACE         &lt 1 DEL
             >;
         };
 
@@ -680,7 +686,7 @@
         &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP           &trans  &trans  &trans  &trans  &trans
         &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN         &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans    &trans         &trans      &trans                &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp BACKSPACE  &kp DELETE  &hold_nav 12 SPACE    &trans  &trans  &trans
+                          &kp BACKSPACE  &kp DELETE  &hold_nav 12 ENTER    &trans  &trans  &trans
             >;
 
             label = "left_nav";
@@ -727,6 +733,28 @@
 &trans  &trans  &trans        &trans         &trans       &trans           &trans  &trans  &trans  &trans  &trans  &trans
                               &kp BACKSPACE  &kp DELETE   &trans           &trans  &trans  &trans
             >;
+        };
+
+        game {
+            bindings = <
+           &kp TAB         &kp Q  &kp W         &kp E   &kp R        &kp Y      &kp U          &kp I       &kp O       &kp P
+           &kp LEFT_SHIFT  &kp A  &kp S         &kp D   &kp F        &kp H      &kp J          &kp K       &kp L       &kp BACKSLASH
+&kp TILDE  &kp LCTRL       &kp Z  &kp X         &kp C   &kp V        &kp N      &kp M          &kp COMMA   &kp PERIOD  &kp SLASH      &kp ESCAPE
+                                  &kp LEFT_ALT  &mo 14  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DELETE
+            >;
+
+            label = "game";
+        };
+
+        game_mod1 {
+            bindings = <
+        &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp T     &trans  &trans  &trans  &trans  &trans
+        &kp ENTER     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp G     &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_0  &kt NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans    &trans  &trans  &trans
+            >;
+
+            label = "game_mod1";
         };
     };
 };
