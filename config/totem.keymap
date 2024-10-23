@@ -588,7 +588,7 @@
        &bal_nav 5 Q            &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
        &hml LEFT_WIN A         &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
 &kp Q  &hold_nav 13 SEMICOLON  &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &hold_nav 8 COMMA     &kp DOT                  &kp FSLH          &kp BSLH
-                                                 &hold_nav 7 TAB           &hold_nav 13 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 13 DEL
+                                                 &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 13 DEL
             >;
         };
 
@@ -638,10 +638,10 @@
 
         left_nav {
             bindings = <
-        &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP          &trans  &trans  &trans  &trans  &trans
-        &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN        &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans         &trans      &trans               &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp BACKSPACE  &kp DELETE  &hold_nav 9 ENTER    &trans  &trans  &trans
+        &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP          &trans  &kp C_MENU  &kp K_MENU  &kp K_CONTEXT_MENU  &mkp RCLK
+        &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN        &trans  &trans      &trans      &trans              &trans
+&trans  &trans  &trans    &trans         &trans      &trans               &trans  &trans      &trans      &trans              &trans     &trans
+                          &kp BACKSPACE  &kp DELETE  &hold_nav 9 ENTER    &trans  &trans      &trans
             >;
 
             label = "left_nav";
