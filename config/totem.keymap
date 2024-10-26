@@ -585,10 +585,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &bal_nav 5 Q            &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
-       &hml LEFT_WIN A         &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
-&kp Q  &hold_nav 13 SEMICOLON  &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &hold_nav 8 COMMA     &kp DOT                  &kp FSLH          &kp BSLH
-                                                 &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 13 DEL
+              &bal_nav 5 Q            &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
+              &hml LEFT_WIN A         &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
+&kp CAPSLOCK  &hold_nav 13 SEMICOLON  &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &hold_nav 8 COMMA     &kp DOT                  &kp FSLH          &kp BSLH
+                                                        &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 13 DEL
             >;
         };
 
@@ -748,13 +748,24 @@
 
         nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &play_pause     &mkp MB2        &kp PRINTSCREEN  &kp CLCK
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &play_pause     &kp K_APP       &kp PRINTSCREEN  &kp LC(C_FAST_FORWARD)
         &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP      &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP      &kp END                 &trans
                         &trans  &trans  &trans    &trans           &trans          &trans
             >;
 
             label = "nav";
+        };
+
+        nav_mod1 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LC(LEFT_BRACKET))  &trans  &kp LS(LC(RIGHT_BRACKET))  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans                    &trans  &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                    &trans  &trans                     &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans                    &trans
+            >;
+
+            label = "nav_mod1";
         };
     };
 };
