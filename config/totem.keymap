@@ -641,7 +641,7 @@
         &trans  &kp LEFT  &kp UP_ARROW   &kp RIGHT   &kp PAGE_UP          &trans  &kp C_MENU  &kp K_MENU  &kp K_CONTEXT_MENU  &mkp RCLK
         &trans  &kp HOME  &kp DOWN       &kp END     &kp PAGE_DOWN        &trans  &trans      &trans      &trans              &trans
 &trans  &trans  &trans    &trans         &trans      &trans               &trans  &trans      &trans      &trans              &trans     &trans
-                          &kp BACKSPACE  &kp DELETE  &hold_nav 9 ENTER    &trans  &trans      &trans
+                          &kp BACKSPACE  &kp DELETE  &hold_nav 9 SPACE    &trans  &trans      &trans
             >;
 
             label = "left_nav";
@@ -748,9 +748,9 @@
 
         nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &play_pause     &kp K_APP       &kp PRINTSCREEN  &kp LS(LC(KP_ASTERISK))
+        &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP  &play_pause     &kp K_APP       &kp PRINTSCREEN  &kp LS(CAPSLOCK)
         &trans  &trans  &trans  &trans  &trans    &kp C_VOL_DN     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP      &kp END                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE       &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP      &kp END           &trans
                         &trans  &trans  &trans    &trans           &trans          &trans
             >;
 
