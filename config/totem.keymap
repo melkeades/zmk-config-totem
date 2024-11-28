@@ -350,7 +350,7 @@
 
         btclr {
             bindings = <&bt BT_CLR>;
-            key-positions = <23 31 35>;
+            key-positions = <23 20 2>;
         };
     };
 
