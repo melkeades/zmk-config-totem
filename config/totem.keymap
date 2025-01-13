@@ -10,11 +10,12 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -373,14 +374,14 @@
         rus: rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &tog 3>;
+            bindings = <&kp LA(LC(SPACE)) &tog 3>;
             label = "RUS";
         };
 
         eng: eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &tog 3>;
+            bindings = <&kp LA(LC(SPACE)) &tog 3>;
             label = "ENG";
         };
 
@@ -593,7 +594,7 @@
             bindings = <
               &bal_nav 5 Q            &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
               &hml LEFT_WIN A         &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
-&kp CAPSLOCK  &hold_nav 13 SEMICOLON  &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &hold_nav 8 COMMA     &kp DOT                  &kp FSLH          &kp BSLH
+&kp CAPSLOCK  &hold_nav 13 SEMICOLON  &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &bal_nav 8 COMMA      &kp DOT                  &kp FSLH          &kp BSLH
                                                         &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 13 DEL
             >;
         };
@@ -622,10 +623,10 @@
 
         qwerty {
             bindings = <
-        &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O       &kp P
-        &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp SQT
-                      &trans  &trans  &trans    &trans  &trans  &trans
+                &kp Q  &kp W  &kp E   &kp R   &kp T                       &kp Y   &kp U   &kp I      &kp O       &kp P
+                &kp A  &kp S  &kp D   &kp F   &kp G                       &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON
+&kp LEFT_BRACE  &kp Z  &kp X  &kp C   &kp V   &kp B                       &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp SQT
+                              &trans  &trans  &mt LC(LEFT_SHIFT) ENTER    &trans  &trans  &trans
             >;
 
             label = "qwe";
