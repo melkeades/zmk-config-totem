@@ -243,7 +243,7 @@
             require-prior-idle-ms = <75>;
         };
 
-        Backslash {
+        Backslash2 {
             bindings = <&kp BACKSLASH>;
             key-positions = <1 12>;
             layers = <0 4>;
