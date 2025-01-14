@@ -167,7 +167,7 @@
             bindings = <&kp PERCENT>;
             key-positions = <22 24>;
             layers = <0 4>;
-            timeout-ms = <100>;
+            timeout-ms = <75>;
             require-prior-idle-ms = <75>;
         };
 
@@ -245,7 +245,7 @@
 
         Backslash2 {
             bindings = <&kp BACKSLASH>;
-            key-positions = <1 12>;
+            key-positions = <1 12 13>;
             layers = <0 4>;
             timeout-ms = <75>;
             require-prior-idle-ms = <75>;
@@ -254,8 +254,8 @@
         Backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <11 12>;
-            layers = <0>;
-            require-prior-idle-ms = <200>;
+            layers = <0 4>;
+            require-prior-idle-ms = <75>;
             timeout-ms = <75>;
         };
 
@@ -263,7 +263,7 @@
             bindings = <&kp SLASH>;
             key-positions = <17 18>;
             layers = <0 4>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <75>;
             timeout-ms = <75>;
         };
 
