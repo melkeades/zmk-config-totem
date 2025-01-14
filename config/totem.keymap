@@ -251,16 +251,16 @@
             require-prior-idle-ms = <75>;
         };
 
-        ctrlDel {
-            bindings = <&ctrlDel2>;
+        Backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <11 12>;
             layers = <0>;
             require-prior-idle-ms = <200>;
             timeout-ms = <75>;
         };
 
-        ctrlBackspace {
-            bindings = <&ctrlBackspace>;
+        Slash {
+            bindings = <&kp SLASH>;
             key-positions = <17 18>;
             layers = <0 4>;
             require-prior-idle-ms = <200>;
