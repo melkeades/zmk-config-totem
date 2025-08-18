@@ -14,7 +14,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
@@ -352,6 +351,11 @@
         btclr {
             bindings = <&bt BT_CLR>;
             key-positions = <23 20 2>;
+        };
+
+        sys-reset {
+            bindings = <&sys_reset>;
+            key-positions = <20 2 34>;
         };
     };
 
