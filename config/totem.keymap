@@ -131,7 +131,7 @@
         };
 
         Quote {
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&kp EXCLAMATION>;
             key-positions = <16 18>;
             layers = <0 4 3>;
             timeout-ms = <75>;
@@ -139,7 +139,7 @@
         };
 
         QuoteDouble {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp QUESTION>;
             key-positions = <13 11>;
             layers = <0 4 3>;
             timeout-ms = <75>;
@@ -251,7 +251,7 @@
         };
 
         Backslash {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&kp SQT>;
             key-positions = <11 12>;
             layers = <0 4 3>;
             require-prior-idle-ms = <75>;
@@ -259,7 +259,7 @@
         };
 
         Slash {
-            bindings = <&kp SLASH>;
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <17 18>;
             layers = <0 4 3>;
             require-prior-idle-ms = <75>;
@@ -596,10 +596,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &bal_nav 5 Q            &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp Z
-              &hml LEFT_WIN A         &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
-&kp CAPSLOCK  &hold_nav 13 SEMICOLON  &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &bal_nav 8 COMMA      &kp DOT                  &kp FSLH          &kp BSLH
-                                                        &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 12 DEL
+              &bal_nav 5 Q     &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp SEMICOLON
+              &hml LEFT_WIN A  &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
+&kp CAPSLOCK  &hold_nav 13 Z   &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &bal_nav 8 COMMA      &kp DOT                  &kp FSLH          &kp BSLH
+                                                 &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 12 DEL
             >;
         };
 
@@ -740,9 +740,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-               &trans        &kp LA(LCTRL)  &kp LS(LEFT_ALT)  &kp LS(LCTRL)   &trans           &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
+               &trans        &kp LA(LCTRL)  &kp PERIOD        &kp LS(LCTRL)   &trans           &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_SUBTRACT
                &kp LEFT_WIN  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &toggle_toggl    &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
-&kp LS(LC(Z))  &kp LC(Z)     &kp LC(X)      &kp LC(C)         &kp LC(V)       &kp LC(Y)        &kp INSERT       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &kp N0
+&kp LS(LC(Z))  &kp LC(Z)     &kp LC(X)      &kp LC(C)         &kp LC(V)       &kp LC(Y)        &kp INSERT       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH    &kp N0
                                             &trans            &trans          &trans           &kp NUMBER_0     &trans        &trans
             >;
         };
