@@ -596,9 +596,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &bal_nav 5 Q     &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp SEMICOLON
-              &hml LEFT_WIN A  &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
-&kp CAPSLOCK  &kp Z            &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &bal_nav 8 COMMA      &kp DOT                  &kp FSLH          &kp BSLH
+              &bal_nav 5 Q     &hml LA(LCTRL) W  &hml LS(LEFT_ALT) E       &hml LC(LEFT_SHIFT) R   &hml LS(LA(LCTRL)) T    &hmr LA(LS(LEFT_CONTROL)) Y  &hmr LC(RIGHT_SHIFT) U  &hmr LS(LEFT_ALT) I   &hmr LA(LEFT_CONTROL) O  &kp P
+              &hml LEFT_WIN A  &hml LEFT_ALT S   &hml_hold LEFT_CONTROL D  &hml_hold LEFT_SHIFT F  &kp G                   &kp H                        &hmr RIGHT_SHIFT J      &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L          &hmr RIGHT_WIN SEMICOLON
+&kp CAPSLOCK  &kp Z            &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 V           &kp B                   &kp N                        &kp M                   &bal_nav 8 COMMA      &kp DOT                  &kp FSLH                  &kp BSLH
                                                  &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 12 DEL
             >;
         };
@@ -638,9 +638,9 @@
 
         shift {
             bindings = <
-        &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(B)    &kp LS(J)  &kp LS(L)  &kp LS(U)      &kp LS(Y)         &kp COLON
-        &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)  &kp LS(G)    &kp LS(M)  &kp LS(N)  &kp LS(E)      &kp LS(I)         &kp LS(O)
-&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(D)  &kp LS(V)    &kp LS(K)  &kp LS(H)  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
+        &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)         &kp LS(P)
+        &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)    &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)         &kp COLON
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(N)  &kp LS(M)  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
                               &trans     &trans     &trans       &trans     &trans     &trans
             >;
 
@@ -777,6 +777,16 @@
             >;
 
             label = "nav_mod1";
+        };
+
+        colemak-0 {
+            label = "BASE";
+            bindings = <
+              &bal_nav 5 Q     &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp SEMICOLON
+              &hml LEFT_WIN A  &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
+&kp CAPSLOCK  &kp Z            &bal_nav 2 X      &bal_nav 14 C             &bal_nav 13 D           &kp V                   &kp K                        &kp H                   &bal_nav 8 COMMA      &kp DOT                  &kp FSLH          &kp BSLH
+                                                 &hold_nav 7 TAB           &hold_nav 12 ESCAPE     &hold_nav 4 ENTER       &bal_nav 14 SPACE            &lt 2 BACKSPACE         &lt 12 DEL
+            >;
         };
     };
 };
