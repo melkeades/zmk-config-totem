@@ -780,7 +780,7 @@
         };
 
         colemak-0 {
-            label = "BASE";
+            label = "old";
             bindings = <
               &bal_nav 5 Q     &hml LA(LCTRL) W  &hml LS(LEFT_ALT) F       &hml LC(LEFT_SHIFT) P   &hml LS(LA(LCTRL)) B    &hmr LA(LS(LEFT_CONTROL)) J  &hmr LC(RIGHT_SHIFT) L  &hmr LS(LEFT_ALT) U   &hmr LA(LEFT_CONTROL) Y  &kp SEMICOLON
               &hml LEFT_WIN A  &hml LEFT_ALT R   &hml_hold LEFT_CONTROL S  &hml_hold LEFT_SHIFT T  &kp G                   &kp M                        &hmr RIGHT_SHIFT N      &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I          &hmr RIGHT_WIN O
